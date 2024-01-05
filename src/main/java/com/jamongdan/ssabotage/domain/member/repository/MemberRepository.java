@@ -1,4 +1,9 @@
 package com.jamongdan.ssabotage.domain.member.repository;
 
-public interface MemberRepository {
+import com.jamongdan.ssabotage.domain.member.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MemberRepository extends JpaRepository<Member, Long> {
 }
